@@ -5,19 +5,19 @@ Gem::Specification.new do |s|
   s.name        = "libvirt"
   s.version     = Libvirt::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["Mitchell Hashimoto"]
-  s.email       = ["mitchell.hashimoto@gmail.com"]
+  s.authors     = ["Mitchell Hashimoto", "Paige Thompson"]
+  s.email       = ["mitchell.hashimoto@gmail.com", "paige@connectxyz.com"]
   s.homepage    = "http://rubygems.org/gems/libvirt"
   s.summary     = "A ruby client library providing an interface to libvirt via FFI."
   s.description = "A ruby client library providing an interface to libvirt via FFI."
 
   s.rubyforge_project = "libvirt"
 
-  s.add_dependency "ffi", "~> 0.6.3"
-  s.add_dependency "nokogiri", "~> 1.4.3"
+  s.add_dependency "ffi", "~> 1.5.0"
+  s.add_dependency "nokogiri", "~> 1.5.9"
 
-  s.add_development_dependency "protest", "~> 0.4.0"
-  s.add_development_dependency "mocha", "~> 0.9.8"
+#  s.add_development_dependency "protest", "~> 0.4.0"
+#  s.add_development_dependency "mocha", "~> 0.9.8"
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
